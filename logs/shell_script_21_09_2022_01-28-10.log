@@ -1,0 +1,8 @@
+download SUCCESS
+download SUCCESS
+download SUCCESS
+  File "/home/dataengr/project1/Climate_bash_python_project/./python_script.py", line 32
+    combine_all_csv_files  pd.concat(csv_data,axis=0,ignore_index=True)
+                           ^^
+SyntaxError: invalid syntax
+Script Failure

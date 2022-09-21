@@ -6,19 +6,35 @@ import pandas as pd
 import glob
 import os
 
-print (os.getcwd()) #print current directory for confirmation script is running in correct directory
-#print(os.system('ls *.csv')) # To see the csv file in directory
-print(os.system('$(ls))'))
+#print (os.getcwd()) #for confirmation script is running in correct directory
+
+"""
+Importing the data file from the input folder
+#glob. glob() method returns a list of files or folders that matches the path specified in the pathname argument
+"""
+input_data = sorted(glob.glob(os.environ['INPUT_FOLDER']+'/*.csv' ))
+#print(input_data) to ensure the file paths for the input folders are correct
 
 
-#importing all the files
-# file1 = pd.read_csv('/home/dataengr/weclouddata_project1/en_climate_hourly_NT_2204100_02-2020_P1H.csv') 
-# file2 = pd.read_csv('/home/dataengr/weclouddata_project1/en_climate_hourly_NT_2204100_02-2021_P1H.csv')
-# file3 = pd.read_csv('/home/dataengr/weclouddata_project1/en_climate_hourly_NT_2204100_02-2022_P1H.csv')
 
-#combine all the files into one single data framemalong the rows
-# combine_all_csv_files = pd.concat([file1,file2,file3],axis=0)
-#print(combine_all_csv_files) 
+#creating a list of pandas data frame to store the csv object for more transformation
+csv_data=[]
+for data in input_data:
+    data_frame = pd.read_csv(data)
+    csv_data.append(data_frame)
 
-#export file name and exlude pandas index
-# done=combine_all_csv_files.to_csv('all_years.csv', index=False)
+"""
+Concatenating the data frames in the csv_data list, axis =0 is to concatenate data frames along the row, 
+ignore_index= True is to  prevent the use of  index values along the concatenation axis i.e. exluding the use default pandas axis along the 
+row and creating a new axis when combining files. This prevent axis values duplication in pandas frame
+"""
+
+combine_all_csv_files = pd.concat(csv_data,axis=0,ignore_index=True)
+
+
+
+"""
+ouputing the concatenated data as a csv file with a specific file name, index =false is to  ignore pandas default index when outputting the file 
+header=False is to remove pandas default headers
+"""
+done=combine_all_csv_files.to_csv(os.environ['OUTPUT_FOLDER']+'/all_years.csv', index=False)

@@ -51,7 +51,7 @@ done;
 
 
 ###run python script####
-#./python_script.py
+./python_script.py
 
 
 #checking if scripts run
