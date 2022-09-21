@@ -36,6 +36,18 @@ We only need the data of Station ID = 48549. The year range of the data we want 
 * Print out SUCCESS when runing shells script if all operations are completed successfuly.
 * Upload files to the github repo using git.
 
+## PROJECT FILES
+
+* [SHELL SCRIPT](https://github.com/Joshua-omolewa/Climate_bash_python_project/blob/main/shell_script.sh)
+
+* [PYTHON SCRIPT](https://github.com/Joshua-omolewa/Climate_bash_python_project/blob/main/python_script.py)
+
+* [INPUT DATA FOLDER](https://github.com/Joshua-omolewa/Climate_bash_python_project/tree/main/input)
+
+* [OUPTUT DATA FOLDER](https://github.com/Joshua-omolewa/Climate_bash_python_project/tree/main/output)
+
+* [LOG FOLDER](https://github.com/Joshua-omolewa/Climate_bash_python_project/tree/main/logs)
+
 ## PROJECT BEING EXECUTED ON SHELL
 
-
+![FINAL SCRIPT IMAGE](https://github.com/Joshua-omolewa/Climate_bash_python_project/blob/main/img/Project%20completed.jpg)
