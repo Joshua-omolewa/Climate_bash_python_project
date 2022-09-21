@@ -1,0 +1,37 @@
+--2022-09-20 22:05:18--  https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=48549&Year=2020&Month=2&Day=14&timeframe=2&submit=%20Download+Data%20
+Resolving climate.weather.gc.ca (climate.weather.gc.ca)... 205.189.10.46
+Connecting to climate.weather.gc.ca (climate.weather.gc.ca)|205.189.10.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/force-download]
+Saving to: ‘/home/dataengr/project1/Climate_bash_python_project/input/2020.csv’
+
+     0K .......... .......... .......... .......... ..........  406K
+    50K .......... ..                                          94.4M=0.1s
+
+2022-09-20 22:05:18 (505 KB/s) - ‘/home/dataengr/project1/Climate_bash_python_project/input/2020.csv’ saved [63740]
+
+--2022-09-20 22:05:18--  https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=48549&Year=2021&Month=2&Day=14&timeframe=2&submit=%20Download+Data%20
+Resolving climate.weather.gc.ca (climate.weather.gc.ca)... 205.189.10.46
+Connecting to climate.weather.gc.ca (climate.weather.gc.ca)|205.189.10.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/force-download]
+Saving to: ‘/home/dataengr/project1/Climate_bash_python_project/input/2021.csv’
+
+     0K .......... .......... .......... .......... ..........  406K
+    50K .......... ..                                          26.3M=0.1s
+
+2022-09-20 22:05:19 (502 KB/s) - ‘/home/dataengr/project1/Climate_bash_python_project/input/2021.csv’ saved [63539]
+
+--2022-09-20 22:05:19--  https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=48549&Year=2022&Month=2&Day=14&timeframe=2&submit=%20Download+Data%20
+Resolving climate.weather.gc.ca (climate.weather.gc.ca)... 205.189.10.46
+Connecting to climate.weather.gc.ca (climate.weather.gc.ca)|205.189.10.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/force-download]
+Saving to: ‘/home/dataengr/project1/Climate_bash_python_project/input/2022.csv’
+
+     0K .......... .......... .......... .......... ..........  437K
+    50K .........                                              47.6M=0.1s
+
+2022-09-20 22:05:19 (519 KB/s) - ‘/home/dataengr/project1/Climate_bash_python_project/input/2022.csv’ saved [60949]
+
+SUCCESS
