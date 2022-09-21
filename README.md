@@ -1,35 +1,37 @@
-# Weclouddata-PROJECT1
+# PROJECT: Climate data pipeline to combine climate data files using python and shell script
+## Created by Joshua Omolewa
 
 ## 1. Business Scenario
-We are going to process Canadian Climate data.
-
-Usually, when we want to download the weather data manually, we go to https://climate.weather.gc.ca/historical_data/search_historic_data_e.html.
-
-But this time, you are going to use a data engineer way to download some data from Canada Climate website, and output one file.
+Company requires data engineer to obtain climate data from Canadian Climate API and concatenate them into a single file and also generate log files for error tracking . To download the weather data manually, visit https://climate.weather.gc.ca/historical_data/search_historic_data_e.html.
 
 ## 2. Business Requirements
-Please download the data from Canadian Climate.
-Please concatenate the downloaded files into one final csv file, called all_years.csv. This is the output of the lab.
-Please upload your scripts and final csv file all_years.csv to the repository you created in the Github.
+Please download the data from Canadian Climate. Please concatenate the downloaded files into one final csv file, called all_years.csv. This is the output of the lab. Please upload your scripts and final csv file all_years.csv to Github repository.
 
 ## 3. Deliverable
-You need to submit a shell script, a python script and all_years.csv to the github repository you created for the lab.
+You need to submit a shell script, a python script and all_years.csv to the github repository .
 
 Shell script: You will use the shell script to control every operation, including data downloading, log setting, python script running.
+
 Python script: While the Python script is used to concatenate all the data into one file.
-all_years.csv: This is the output file you concatenate all the downloads.
 
-## 4. Program Procedure
-download data with shell command
-concatenate data to one file with the python script
-save output file in the python script
-print out SUCCESS with shell command.
-create a repository in github, and upload your file to the repo with git.
-The Shell script will call the Python Script to finish the Python work.
+all_years.csv: This is the output file to be generated after concatenating the files.
 
-## 5. Specification Detail
-We only need the data of Station ID = 48549.
-The year range of the data we want is from 2020 to 2022.
-We only want the data in February.
-The data will be downloaded in hourly format.
-The output file will be named as all_years.csv.
+## 4. Specification Detail
+We only need the data of Station ID = 48549. The year range of the data we want is from 2020 to 2022. We only want the data in February. The data will be downloaded in hourly format. The output file will be named as all_years.csv.
+
+## Please note the following to use the climate data API (see shell script)
+year = year (e.g 2022, 2023, 2000 etc)
+month = 2 (this refers to February)
+format= [csv|xml]: the format output
+timeframe = 1: for hourly data
+timeframe = 2: for daily data
+timeframe = 3 for monthly data
+Day = Day of the month the value of the "day" variable is not used and can be an arbitrary value
+station ID= station ID, For another station, change the value of the variable stationID
+format: file format (specify csv, xml e.t.c) For the data in XML format, change the value of the variable format to xml in the URL.
+## 5. STEPS USED TO COMPLETE THIS PROJECT
+Download data with shell script and automate log generation process
+Execute python script from shell script to concatenate the data into one file
+Save output file in the python script
+Print out SUCCESS when runing shells script if all operations are completed successfuly.
+Upload files to the github repo using git.
