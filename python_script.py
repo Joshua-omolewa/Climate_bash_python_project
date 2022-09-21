@@ -10,7 +10,7 @@ import os
 
 """
 Importing the data file from the input folder
-#glob. glob() method returns a list of files or folders that matches the path specified in the pathname argument
+glob. glob() method returns a list of files or folders that matches the path specified in the pathname argument
 """
 input_data = sorted(glob.glob(os.environ['INPUT_FOLDER']+'/*.csv' ))
 #print(input_data) to ensure the file paths for the input folders are correct
