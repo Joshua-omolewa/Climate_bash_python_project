@@ -20,18 +20,18 @@ all_years.csv: This is the output file to be generated after concatenating the f
 We only need the data of Station ID = 48549. The year range of the data we want is from 2020 to 2022. We only want the data in February. The data will be downloaded in hourly format. The output file will be named as all_years.csv.
 
 ## Please note the following to use the climate data API (see shell script)
-year = year (e.g 2022, 2023, 2000 etc)
-month = 2 (this refers to February)
-format= [csv|xml]: the format output
-timeframe = 1: for hourly data
-timeframe = 2: for daily data
-timeframe = 3 for monthly data
-Day = Day of the month the value of the "day" variable is not used and can be an arbitrary value
-station ID= station ID, For another station, change the value of the variable stationID
-format: file format (specify csv, xml e.t.c) For the data in XML format, change the value of the variable format to xml in the URL.
+* year = year (e.g 2022, 2023, 2000 etc)
+* month = 2 (this refers to February)
+* format= [csv|xml]: the format output
+* timeframe = 1: for hourly data
+* timeframe = 2: for daily data
+* timeframe = 3 for monthly data
+* Day = Day of the month the value of the "day" variable is not used and can be an arbitrary value
+* station ID= station ID, For another station, change the value of the variable stationID
+* format: file format (specify csv, xml e.t.c) For the data in XML format, change the value of the variable format to xml in the URL.
 ## 5. STEPS USED TO COMPLETE THIS PROJECT
-Download data with shell script and automate log generation process
-Execute python script from shell script to concatenate the data into one file
-Save output file in the python script
-Print out SUCCESS when runing shells script if all operations are completed successfuly.
-Upload files to the github repo using git.
+*Download data with shell script and automate log generation process
+*Execute python script from shell script to concatenate the data into one file
+*Save output file in the python script
+*Print out SUCCESS when runing shells script if all operations are completed successfuly.
+*Upload files to the github repo using git.
