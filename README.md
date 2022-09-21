@@ -30,8 +30,8 @@ We only need the data of Station ID = 48549. The year range of the data we want 
 * station ID= station ID, For another station, change the value of the variable stationID
 * format: file format (specify csv, xml e.t.c) For the data in XML format, change the value of the variable format to xml in the URL.
 ## 5. STEPS USED TO COMPLETE THIS PROJECT
-*Download data with shell script and automate log generation process
-*Execute python script from shell script to concatenate the data into one file
-*Save output file in the python script
-*Print out SUCCESS when runing shells script if all operations are completed successfuly.
-*Upload files to the github repo using git.
+* Download data with shell script and automate log generation process
+* Execute python script from shell script to concatenate the data into one file
+* Save output file in the python script
+* Print out SUCCESS when runing shells script if all operations are completed successfuly.
+* Upload files to the github repo using git.
