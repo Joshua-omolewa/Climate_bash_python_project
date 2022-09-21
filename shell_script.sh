@@ -4,7 +4,7 @@
 
 ##### creating shell script to download the raw data and save file into ######
 
-### SETTING DATE FOMAT TO BE CONCATENATED  WITH LOG FILES ###
+### SETTING DATE FORMAT TO BE CONCATENATED  WITH LOG FILES ###
 log_date=$(date +"%d_%m_%Y_%H-%M-%S")
 ##########################################
 
@@ -22,7 +22,7 @@ export LOG_FILE_NAME="shell_script"
 export LOG_FILE="${LOG_FOLDER}/${LOG_FILE_NAME}_${log_date}.log"
 ##############################################################
 
-#### SET LOG RULES #####
+#### SETTING LOG RULES FOR AUTOMATIC LOGGING #####
 
 exec > >(tee ${LOG_FILE}) 2>&1
 ###################################
