@@ -1,9 +1,11 @@
 #!/bin/bash
 
+#Created by Joshua Omolewa
+
 ##### creating shell script to download the raw data and save file into ######
 
-### SETTING DATE FOR LOG FILES ###
-log_date=$(date +"%d %m %Y %H-%M-%S")
+### SETTING DATE FOMAT TO BE CONCATENATED  WITH LOG FILES ###
+log_date=$(date +"%d_%m_%Y_%H-%M-%S")
 ##########################################
 
 #### shell script path ######
@@ -17,22 +19,25 @@ export OUTPUT_FOLDER=/home/dataengr/project1/Climate_bash_python_project/output
 export SCRIPT_FOLDER=$script_path
 export LOG_FOLDER=/home/dataengr/project1/Climate_bash_python_project/logs
 export LOG_FILE_NAME="shell_script"
-export LOG_FILE=${LOG_FOLDER}/${LOG_FILE_NAME}_${log_date}.log
+export LOG_FILE="${LOG_FOLDER}/${LOG_FILE_NAME}_${log_date}.log"
 ##############################################################
 
-#########################################################
 #### SET LOG RULES #####
 
-exec 1> >(tee ${LOG_FILE}) 2>&1
+exec > >(tee ${LOG_FILE}) 2>&1
+###################################
 
+
+###DOWNLOADING DATA FROM CLIMATE API###
 
 : 'for loop below  download the data from canadian climate website using api below and saving downloaded file to input folder 
-in quiet mode (to prevent ouput of download progress from displaying log files'
+in quiet mode (-q) (to prevent ouput of download progress from displaying log files'
 
 for year in {2020..2022};do
 
 wget  -q --content-disposition "https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=48549&Year=${year}&Month=2&Day=14&timeframe=2&submit= Download+Data " -O ${INPUT_FOLDER}/${year}.csv;
 
+###checks if file downloads were sucessful###
 if [ $? -eq 0 ]
 then
  echo "download SUCCESS"
@@ -41,18 +46,21 @@ else
  exit 1
 fi;
 done;
+###############################################################
 
 
-#run python script
+
+###run python script####
 #./python_script.py
+
 
 #checking if scripts run
 
 if [ $? -eq 0 ]
 then
- echo "SUCCESS"
+ echo "Script execution SUCCESS"
  exit 0
 else
- echo "Failure"
+ echo "Script Failure"
  exit 1
 fi

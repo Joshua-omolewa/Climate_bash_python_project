@@ -8,7 +8,7 @@ import os
 
 print (os.getcwd()) #print current directory for confirmation script is running in correct directory
 #print(os.system('ls *.csv')) # To see the csv file in directory
-print(os.system('cd INPUT' && 'pwd'))
+print(os.system('$(ls))'))
 
 
 #importing all the files
