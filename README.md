@@ -35,3 +35,7 @@ We only need the data of Station ID = 48549. The year range of the data we want 
 * Save output file in the python script
 * Print out SUCCESS when runing shells script if all operations are completed successfuly.
 * Upload files to the github repo using git.
+
+## PROJECT BEING EXECUTED ON SHELL
+
+
