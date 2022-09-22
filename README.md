@@ -52,3 +52,13 @@ We only need the data of Station ID = 48549. The year range of the data we want 
 ## PROJECT BEING EXECUTED ON SHELL
 
 ![FINAL SCRIPT IMAGE](https://github.com/Joshua-omolewa/Climate_bash_python_project/blob/main/img/Project%20completed.jpg)
+
+# Follow Me On
+  
+* LinkedIn: [@omolewajoshua](https://www.linkedin.com/in/joshuaomolewa/)  
+* Github: [@joshua-omolewa](https://github.com/Joshua-omolewa)
+
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
