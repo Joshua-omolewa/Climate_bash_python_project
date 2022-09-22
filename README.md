@@ -1,5 +1,6 @@
 # PROJECT: Climate data pipeline to combine climate data files using python and shell script
-## Created by Joshua Omolewa
+
+# Author: 👤 **Joshua Omolewa**
 
 ## 1. Business Scenario
 Company requires data engineer to obtain climate data from Canadian Climate API and concatenate them into a single file and also generate log files for error tracking . To download the weather data manually, visit https://climate.weather.gc.ca/historical_data/search_historic_data_e.html.
