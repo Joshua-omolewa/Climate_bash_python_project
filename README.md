@@ -6,7 +6,7 @@
 Company requires data engineer to obtain climate data from Canadian Climate API and concatenate them into a single file and also generate log files for error tracking . To download the weather data manually, visit https://climate.weather.gc.ca/historical_data/search_historic_data_e.html.
 
 ## 2. Business Requirements
-Please download the data from Canadian Climate. Please concatenate the downloaded files into one final csv file, called all_years.csv. This is the output of the lab. Please upload your scripts and final csv file all_years.csv to Github repository.
+Download the data from Canadian Climate. Concatenate the downloaded data files into one final csv file, called all_years.csv as ouput. Upload your scripts and final csv file all_years.csv to Github repository.
 
 ## 3. Deliverable
 You need to submit a shell script, a python script and all_years.csv to the github repository .
