@@ -3,22 +3,22 @@
 # Author: 👤 **Joshua Omolewa**
 
 ## 1. Business Scenario
-Company requires data engineer to obtain climate data from Canadian Climate API and concatenate them into a single file and also generate log files for error tracking . To download the weather data manually, visit https://climate.weather.gc.ca/historical_data/search_historic_data_e.html.
+Company requires data engineer to obtain Toronto climate data from Canadian Climate API and concatenate them into a single file and also generate log files for error tracking . To download the weather data manually, visit https://climate.weather.gc.ca/historical_data/search_historic_data_e.html.
 
 ## 2. Business Requirements
-Download the data from Canadian Climate. Concatenate the downloaded data files into one final csv file, called all_years.csv as ouput. Upload your scripts and final csv file all_years.csv to Github repository.
+Download the data from Canadian Climate API. Concatenate the downloaded data files into one final csv file, called all_years.csv as ouput. Upload the scripts and final csv file all_years.csv to Github repository.
 
 ## 3. Deliverable
-You need to submit a shell script, a python script and all_years.csv to the github repository .
+Upload shell script, python script and all_years.csv to the github repository .
 
-Shell script: You will use the shell script to control every operation, including data downloading, log setting, python script running.
+Shell script: The shell script will control every operation, including data downloading, log setting, python script running.
 
-Python script: While the Python script is used to concatenate all the data into one file.
+Python script: The Python script is used to concatenate all the data into one file.
 
-all_years.csv: This is the output file to be generated after concatenating the files.
+all_years.csv: The output file to be generated after concatenating the files.
 
 ## 4. Specification Detail
-We only need the data of Station ID = 48549. The year range of the data we want is from 2020 to 2022. We only want the data in February. The data will be downloaded in hourly format. The output file will be named as all_years.csv.
+The data required is from Station ID = 48549. The year range of the data we want is from 2020 to 2022. We only want the data in February. The data will be downloaded in hourly format. The output file will be named as all_years.csv.
 
 ## Please note the following to use the climate data API (see shell script)
 * year = year (e.g 2022, 2023, 2000 etc)
