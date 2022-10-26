@@ -36,6 +36,7 @@ The data required is from Station ID = 48549. The year range of the data we want
 * Save output file in the python script
 * Print out SUCCESS when runing shells script if all operations are completed successfuly.
 * Upload files to the github repo using git.
+### Note: Pipeline can be automated using chronjob if needed
 
 ## PROJECT FILES
 
