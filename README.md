@@ -32,7 +32,7 @@ The data required is from Station ID = 48549. The year range of the data we want
 * format: file format (specify csv, xml e.t.c) For the data in XML format, change the value of the variable format to xml in the URL.
 
 ## Project Architecture
-<img src="https://github.com/Joshua-omolewa/Toronto_Climate_bash_python_project/blob/main/img/Project.jpg"  width="100%" height="100%">
+<img src="https://github.com/Joshua-omolewa/Toronto_Climate_bash_python_project/blob/main/img/Project1.jpg"  width="100%" height="100%">
 
 ## 5. STEPS USED TO COMPLETE THIS PROJECT
 * Download data with shell script into the input folder in the Ubuntu virtual machine (VM) and automate log generation process
