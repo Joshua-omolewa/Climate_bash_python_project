@@ -35,11 +35,10 @@ The data required is from Station ID = 48549. The year range of the data we want
 <img src="https://github.com/Joshua-omolewa/Toronto_Climate_bash_python_project/blob/main/img/Project.jpg"  width="100%" height="100%">
 
 ## 5. STEPS USED TO COMPLETE THIS PROJECT
-* Download data with shell script and automate log generation process
-* Execute python script from shell script to concatenate the data into one file
-* Save output file in the python script
-* Print out SUCCESS when runing shells script if all operations are completed successfuly.
-* Upload files to the github repo using git.
+* Download data with shell script into the input folder in the Ubuntu virtual machine (VM) and automate log generation process
+* Execute python script `./python_script.py` from shell script to concatenate the data in input folder into one file called all_years_csv and store transformed data in utput folder
+* Shell script to print out SUCCESS when if all operations are completed successfuly.
+* Upload files to the github repo using git `git push`
 ### Note: Pipeline can be automated using chronjob if needed
 
 ## PROJECT FILES
