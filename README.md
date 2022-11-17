@@ -36,7 +36,7 @@ The data required is from Station ID = 48549. The year range of the data we want
 
 ## 5. STEPS USED TO COMPLETE THIS PROJECT
 * Download data with shell script into the input folder in the Ubuntu virtual machine (VM) and automate log generation process
-* Execute python script `./python_script.py` from shell script to concatenate the data in input folder into one file called all_years_csv and store transformed data in utput folder
+* Execute python script `./python_script.py` from shell script to concatenate the data in input folder into one file called all_years_csv and store transformed data in output folder
 * Shell script to print out SUCCESS when if all operations are completed successfuly.
 * Upload files to the github repo using git `git push`
 ### Note: Pipeline can be automated using chronjob if needed
