@@ -1,4 +1,4 @@
-# PROJECT: Toronto climate data pipeline to combine climate data files using python and shell script
+# PROJECT: Toronto climate data ETL pipeline  that combine climate data files using python and shell script
 
 # Author: 👤 **Joshua Omolewa**
 
