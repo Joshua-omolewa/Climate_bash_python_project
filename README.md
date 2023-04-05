@@ -1,4 +1,4 @@
-# PROJECT: Toronto climate data ETL pipeline  that combine climate data files using python and shell script
+# PROJECT: Toronto climate data ETL pipeline that extracts climate data from API and transfrom the data by combining the climate data files using python and shell script and then loading the transfromed data into a local ouptut folder 
 
 # Author: 👤 **Joshua Omolewa**
 
